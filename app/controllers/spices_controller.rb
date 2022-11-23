@@ -4,7 +4,6 @@ class SpicesController < ApplicationController
         spices = Spice.all
         render json: spices
     end
-
     def create 
         spice = Spice.create(spice_params)
         render json: spice, status: :created
